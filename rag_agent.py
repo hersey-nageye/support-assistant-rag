@@ -23,7 +23,7 @@ conversation = openai_client.conversations.create()
 
 response = openai_client.responses.create(
     conversation=conversation.id,
-    input="What's expected of me when submitting a pull request?",
+    input="What are the requirements for API endpoint naming?",
     extra_body={"agent_reference": {"name": "support-assistant", "type": "agent_reference"}},
 )
 
