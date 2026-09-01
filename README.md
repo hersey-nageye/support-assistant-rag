@@ -17,7 +17,7 @@ It includes:
 
 ## Why RAG?
 
-[A short paragraph — this is worth writing yourself, but something like: "Language models can answer general questions confidently, but they have no knowledge of an organization's specific policies or documentation. This project demonstrates how retrieval-augmented generation grounds a model's responses in real, current source documents — reducing hallucination and enabling accurate answers to organization-specific questions."]
+Language models can answer general questions confidently, but they have no knowledge of an organisation's specific policies or documentation. This project demonstrates how retrieval-augmented generation grounds a model's responses in real, current source documents — reducing hallucination and enabling accurate answers to organistion-specific questions.
 
 ## Local Setup
 
