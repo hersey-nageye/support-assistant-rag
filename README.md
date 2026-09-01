@@ -97,3 +97,42 @@ Further escalation: 60 minutes (Incident Commander convenes war room and notifie
 Sources:
 - Incident Response Runbook
 ```
+
+```
+Q: Do I need to use an authenticator app for two-factor authentication, or can I use text messages?
+
+Short checklist — what we expect when you open a PR:
+
+- Use the correct branch name (feature/short-description or fix/short-description).【6:0†API and Coding Style Guide】  
+- Scope the PR to a single logical change; don’t bundle unrelated fixes.【6:0†API and Coding Style Guide】  
+- Include a clear description of what changed and why, and link the relevant ticket.【6:0†API and Coding Style Guide】  
+- Add tests: new code needs unit test coverage (≥80% for new code); critical paths also need integration tests. Tests must pass in CI before merge.【6:0†API and Coding Style Guide】  
+- Ensure public API changes are documented (OpenAPI) and internal libraries have README updates as needed.【6:0†API and Coding Style Guide】  
+- At least one approval is required before merging; reviewers are expected to respond within one business day.【6:0†API and Coding Style Guide】【6:1†New Engineer Onboarding Guide】  
+- Squash commits on merge to keep main branch history clean.【6:0†API and Coding Style Guide】
+
+If you want, paste the PR link and I’ll run through this checklist for you.
+
+Sources:
+- Coding Style Guide
+- Onboarding Guide
+
+```
+
+```
+Q: What are the requirements for API endpoint naming?
+
+Requirements for API endpoint naming:
+
+- Use plural nouns for resources (e.g., orders, customers).  
+- Use kebab-case for paths (hyphen-separated), e.g. /api/customer-orders.  
+- Avoid verbs in endpoint paths; use HTTP methods to express actions (GET, POST, PATCH, DELETE).  
+- Public API endpoints must be documented using the OpenAPI specification.
+
+Source: API and Coding Style Guide【6:0†source】
+
+Sources:
+- Coding Style Guide
+
+```
+
