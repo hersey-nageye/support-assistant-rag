@@ -13,7 +13,7 @@ It includes:
 
 ## Architectural Diagram
 
-![Architecture Diagram](images/architecture-diagram.png)
+![Architecture Diagram](diagram.png)
 
 ## Why RAG?
 
