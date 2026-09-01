@@ -1,3 +1,4 @@
+# import os and dotenv to load environment variables from a .env file
 import os
 from dotenv import load_dotenv
 
@@ -11,7 +12,7 @@ from azure.ai.projects.models import PromptAgentDefinition, MCPTool
 # Load environment variables from .env file
 load_dotenv()
 
-# Connect to the Foundry project
+# Create project-level client to handle project-level operations, including creating agents and tools
 project_endpoint = os.environ["PROJECT_ENDPOINT"]
 credential = DefaultAzureCredential()
 
@@ -34,7 +35,6 @@ headers = {
     "Authorization": f"Bearer {bearer_token_provider()}",
 }
 
-# The project connection, tool definition and custom
 
 # Create project connection to the knowledge base's MCP endpoint. 
 response = requests.put(
@@ -54,7 +54,6 @@ response = requests.put(
     }
 )
 
-# response.raise_for_status()
 print(f"Connection '{project_connection_name}' created or updated successfully.")
 
 # # Define the tool that wraps your knowledge base

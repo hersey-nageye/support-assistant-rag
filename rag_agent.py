@@ -1,11 +1,14 @@
+# Import os and dotenv to load environment variables from a .env file
 import os
 from dotenv import load_dotenv
 
+# Import Azure identity and AI Projects client - authenticates using Azure credentials instead of an API key
 from azure.identity import DefaultAzureCredential
 from azure.ai.projects import AIProjectClient
 
 load_dotenv()
 
+# Create project-level client to derive OpenAI client and create a conversation
 project_endpoint = os.environ["PROJECT_ENDPOINT"]
 credential = DefaultAzureCredential()
 
@@ -14,6 +17,7 @@ project_client = AIProjectClient(
     endpoint=project_endpoint
 )
 
+# Create an OpenAI client from the project client and start a conversation
 openai_client = project_client.get_openai_client()
 conversation = openai_client.conversations.create()
 
@@ -25,6 +29,7 @@ response = openai_client.responses.create(
 
 print(response.output_text)
 
+# Print the sources used in the response
 print("\nSources:")
 sources = set()
 for item in response.output:
