@@ -6,9 +6,9 @@ This project is a Retrieval-Augmented Generation (RAG) assistant built on Micros
 
 It includes:
 
-* A knowledge base built from multiple source documents, indexed and made searchable via Azure AI Search (Foundry IQ).
-* A custom Foundry agent equipped with an MCP-based retrieval tool, connected to that knowledge base.
-* Routing logic (via both knowledge base retrieval instructions and agent instructions) to prioritize the correct document when a question could plausibly relate to more than one source.
+* A knowledge base built from multiple source documents, indexed and made searchable via Azure AI Search.
+* A custom Foundry agent equipped with a Model Context Protocol (MCP)-based retrieval tool, connected to that knowledge base.
+* Routing logic (via both knowledge base retrieval instructions and agent instructions) to prioritise the correct document when a question could plausibly relate to more than one source.
 * Transparent citation of sources for every answer, so responses can be traced back to the exact document they were grounded in.
 
 ## Architectural Diagram
@@ -52,7 +52,7 @@ support-assistant-rag
 │   ├── security_access_policy.pdf
 │   └── coding_style_guide.pdf
 └── images/
-    └── architecture-diagram.png
+    └── diagram.png
 ```
 ## Key Components
  
